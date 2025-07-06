@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script1.js"></script>
+    <title>Student details</title>
+  </head>
+  <body bgcolor=lightblue>
+    <table border="1" bgcolor=lightpink>
+      <tr>
+        <td>
+          <form onsubmit="event.preventDefault();onFormSubmit();">
+            <h2 align=center>Personal details</h2>
+      <table border="0">
+            <tr>
+             <td> <label for="Name">Name:</label></td>
+              <td><input
+                type="text"
+                class="stuName"
+                id="stuName"
+                placeholder= "Enter the Name"
+              /></td>
+            </tr>
+            <tr>
+              <td><label for="Age">Age:    </label></td>
+              <td><input
+                type="text"
+                class="stuAge"
+                id="stuAge"
+                placeholder="Enter the Age"
+              /></td></tr>
+            <tr>
+              <td><label for="Phone No">Phone No:</label></td>
+              <td><input
+                type="text"
+                class="stuPhone no"
+                id="stuPhone no"
+                placeholder="+91 Enter the Phone number"
+              /></td></tr>
+            <tr>
+              <td><label for="Mail Id">Mail Id:</label></td>
+              <td><input
+                type="text"
+                class="stuMail Id"
+                id="stuMail Id"
+                placeholder="Enter a Mail Id "
+              /></td>
+            </tr>
+            <tr>
+           <td>
+              <label for="Course">Course:</label></td>
+              <td><input
+                type="text"
+                class="stuCourse"
+                id="stuCourse"
+                placeholder="Enter the Course"
+              /></td>
+          <tr>
+            <td>
+              <div class="button-group">
+        <input type="Submit" value="Submit" class="submit-btn">
+        <input type="reset" value="Clear" class="clear-btn">
+        <input type="button" value="Exit" class="exit-btn" onclick="window.close();">
+      </div>
+          
+            
+              
+           </tr>
+         
+         
+
+    </table>
+  </body>
+</html>

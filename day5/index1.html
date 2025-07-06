@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+    <script src="script.js"></script>
+    <title>Student details</title>
+  </head>
+<table border="1">
+  <tr>
+    <td>
+      <form onsubmit="event.preventDefault(); onFormSubmit();">
+        <h2>Enter student details</h2>
+
+        <div>
+          <label for="studName">Student Name</label><br />
+          <input type="text" id="studName" placeholder="Enter the student name" />
+        </div>
+        <div>
+          <label for="facDep">College Name</label><br />
+          <input type="text" id="facDep" placeholder="Enter the college name" />
+        </div>
+        <div>
+          <label for="studcourse">Course</label><br />
+          <input type="text" id="studcourse" placeholder="Enter the course" />
+        </div>
+        <div>
+          <label for="studroll-no">Roll-no</label><br />
+          <input type="number" id="studroll-no" placeholder="Enter a roll-no" />
+        </div>
+        <div>
+          <label for="studPlace">Place</label><br />
+          <input type="text" id="studPlace" placeholder="Enter the address of a student" />
+        </div>
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </td>
+    <td>
+      <table  
+      class="list" 
+      id="faclist" 
+      style="background-color:pink;
+       vertical-align: top;"
+       style="text-align: center;"
+       >
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>College Name</th>
+            <th>Course</th>
+            <th>Roll-no</th>
+            <th>Place</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </td>
+  </tr>
+</table>
